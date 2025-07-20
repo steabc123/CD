@@ -1,6 +1,11 @@
 package database;
 
-public class CD {
+/**
+ * CD扩展了Item类
+ * CD类，继承自Item类
+ * 用于表示音乐CD的相关信息
+ */
+public class CD extends Item{
     private String title;
     private String artist;
     private int numofTracks;
@@ -10,7 +15,8 @@ public class CD {
 
     /** 构造器*/
     public CD(String title, String artist, int numofTracks, int playingTime, String comment) {
-        this.title = title;
+        super(title);
+//        this.title = title;
         this.artist = artist;
         this.numofTracks = numofTracks;
         this.playingTime = playingTime;

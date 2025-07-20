@@ -1,7 +1,7 @@
 package database;
 
-public class DVD {
-    private String title;
+public class DVD extends Item {
+
     private String director;
     private int playingTime;
     private boolean gotIt = false;// in seconds
@@ -9,7 +9,8 @@ public class DVD {
 
     /** 构造器*/
     public DVD(String title, String director, int playingTime, String comment) {
-        this.title = title;
+        super(title);
+//        this.title = title;
         this.director = director;
         this.playingTime = playingTime;
         this.comment = comment;
